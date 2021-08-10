@@ -99,7 +99,7 @@
     }
 
     &__milk {
-        background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+        background-image: url('images/mobile/image-gallery-milkbottles.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
         min-height: 11.25rem;
@@ -110,7 +110,7 @@
         }
 
         @include breakpoint-up(large) {
-            background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+            background-image: url('images/desktop/image-gallery-milkbottles.jpg');
             min-height: 20rem;
         }
 
@@ -120,7 +120,7 @@
     }
 
     &__egg {
-        background-image: url('../images/mobile/image-gallery-orange.jpg');
+        background-image: url('images/mobile/image-gallery-orange.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
         min-height: 11.25rem;
@@ -131,7 +131,7 @@
         }
 
         @include breakpoint-up(large) {
-            background-image: url('../images/desktop/image-gallery-orange.jpg');
+            background-image: url('images/desktop/image-gallery-orange.jpg');
             min-height: 20rem;
         }
 
@@ -141,7 +141,7 @@
     }
 
     &__cone {
-        background-image: url('../images/mobile/image-gallery-cone.jpg');
+        background-image: url('images/mobile/image-gallery-cone.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
         min-height: 11.25rem;
@@ -152,7 +152,7 @@
         }
 
         @include breakpoint-up(large) {
-            background-image: url('../images/desktop/image-gallery-cone.jpg');
+            background-image: url('images/desktop/image-gallery-cone.jpg');
             min-height: 20rem;
         }
 
@@ -162,7 +162,7 @@
     }
 
     &__sugarcube {
-        background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+        background-image: url('images/mobile/image-gallery-sugar-cubes.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
         min-height: 11.25rem;
@@ -173,7 +173,7 @@
         }
 
         @include breakpoint-up(large) {
-            background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+            background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
             min-height: 20rem;
         }
 

@@ -374,7 +374,7 @@ a, a:visited, a:hover {
 
 .hero__img {
   position: relative;
-  background-image: url("images/mobile/image-header.jpg");
+  background-image: url("/images/mobile/image-header.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 32.25rem;
@@ -382,7 +382,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 41.6875em) {
   .hero__img {
-    background-image: url("images/desktop/image-header.jpg");
+    background-image: url("/images/desktop/image-header.jpg");
     min-height: 23.125rem;
     margin-top: 2.5rem;
   }
@@ -411,7 +411,7 @@ a, a:visited, a:hover {
 .hero__img::before {
   content: '';
   position: absolute;
-  background: url("images/icon-arrow-down.svg");
+  background: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -503,7 +503,7 @@ a, a:visited, a:hover {
 
 .content__egg {
   position: relative;
-  background-image: url("images/mobile/image-transform.jpg");
+  background-image: url("/images/mobile/image-transform.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 21.5625rem;
@@ -519,7 +519,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 48em) {
   .content__egg {
-    background-image: url("images/desktop/image-transform.jpg");
+    background-image: url("/images/desktop/image-transform.jpg");
     min-height: 20rem;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
@@ -612,7 +612,7 @@ a, a:visited, a:hover {
 
 .content__cup {
   position: relative;
-  background-image: url("images/mobile/image-stand-out.jpg");
+  background-image: url("/images/mobile/image-stand-out.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 21.5625rem;
@@ -628,7 +628,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 48em) {
   .content__cup {
-    background-image: url("images/desktop/image-stand-out.jpg");
+    background-image: url("/images/desktop/image-stand-out.jpg");
     min-height: 20rem;
     grid-area: cup;
   }
@@ -783,7 +783,7 @@ a, a:visited, a:hover {
 
 .content__cherry {
   position: relative;
-  background-image: url("images/mobile/image-graphic-design.jpg");
+  background-image: url("/images/mobile/image-graphic-design.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 41.5rem;
@@ -797,7 +797,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 48em) {
   .content__cherry {
-    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-image: url("/images/desktop/image-graphic-design.jpg");
     min-height: 20rem;
     grid-area: cherries;
   }
@@ -865,7 +865,7 @@ a, a:visited, a:hover {
 
 .content__orange {
   position: relative;
-  background-image: url("images/mobile/image-photography.jpg");
+  background-image: url("/images/mobile/image-photography.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 33.5rem;
@@ -880,7 +880,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 48em) {
   .content__orange {
-    background-image: url("images/desktop/image-photography.jpg");
+    background-image: url("/images/desktop/image-photography.jpg");
     min-height: 20rem;
     margin-top: 0;
     grid-area: oranges;
@@ -1017,7 +1017,7 @@ a, a:visited, a:hover {
 }
 
 .testimonial__milk {
-  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 11.25rem;
@@ -1034,7 +1034,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .testimonial__milk {
-    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
     min-height: 20rem;
   }
 }
@@ -1046,7 +1046,7 @@ a, a:visited, a:hover {
 }
 
 .testimonial__egg {
-  background-image: url("images/mobile/image-gallery-orange.jpg");
+  background-image: url("/images/mobile/image-gallery-orange.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 11.25rem;
@@ -1063,7 +1063,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .testimonial__egg {
-    background-image: url("images/desktop/image-gallery-orange.jpg");
+    background-image: url("/images/desktop/image-gallery-orange.jpg");
     min-height: 20rem;
   }
 }
@@ -1075,7 +1075,7 @@ a, a:visited, a:hover {
 }
 
 .testimonial__cone {
-  background-image: url("images/mobile/image-gallery-cone.jpg");
+  background-image: url("/images/mobile/image-gallery-cone.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 11.25rem;
@@ -1092,7 +1092,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .testimonial__cone {
-    background-image: url("images/desktop/image-gallery-cone.jpg");
+    background-image: url("/images/desktop/image-gallery-cone.jpg");
     min-height: 20rem;
   }
 }
@@ -1104,7 +1104,7 @@ a, a:visited, a:hover {
 }
 
 .testimonial__sugarcube {
-  background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 11.25rem;
@@ -1121,7 +1121,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .testimonial__sugarcube {
-    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
     min-height: 20rem;
   }
 }

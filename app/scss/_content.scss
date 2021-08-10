@@ -20,7 +20,7 @@
 
     &__egg {
         position: relative;
-        background-image: url('images/mobile/image-transform.jpg');
+        background-image: url('/images/mobile/image-transform.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: 21.5625rem;
@@ -32,7 +32,7 @@
         }
 
         @include breakpoint-up(medium) {
-            background-image: url('images/desktop/image-transform.jpg');
+            background-image: url('/images/desktop/image-transform.jpg');
             min-height: 20rem;
             grid-area: egg;
         }
@@ -113,7 +113,7 @@
 
     &__cup {
         position: relative;
-        background-image: url('images/mobile/image-stand-out.jpg');
+        background-image: url('/images/mobile/image-stand-out.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: 21.5625rem;
@@ -125,7 +125,7 @@
         }
         
         @include breakpoint-up(medium) {
-            background-image: url('images/desktop/image-stand-out.jpg');
+            background-image: url('/images/desktop/image-stand-out.jpg');
             min-height: 20rem;
             grid-area: cup;
         }
@@ -263,7 +263,7 @@
 
     &__cherry {
         position: relative;
-        background-image: url('images/mobile/image-graphic-design.jpg');
+        background-image: url('/images/mobile/image-graphic-design.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: 41.5rem;
@@ -273,7 +273,7 @@
         }
 
         @include breakpoint-up(medium) {
-            background-image: url('images/desktop/image-graphic-design.jpg');
+            background-image: url('/images/desktop/image-graphic-design.jpg');
             min-height: 20rem;
             grid-area: cherries;
         }
@@ -330,7 +330,7 @@
 
     &__orange {
         position: relative;
-        background-image: url('images/mobile/image-photography.jpg');
+        background-image: url('/images/mobile/image-photography.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: 33.5rem;
@@ -341,7 +341,7 @@
         }
 
         @include breakpoint-up(medium) {
-            background-image: url('images/desktop/image-photography.jpg');
+            background-image: url('/images/desktop/image-photography.jpg');
             min-height: 20rem;
             margin-top: 0;
             grid-area: oranges;

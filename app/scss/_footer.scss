@@ -1,0 +1,50 @@
+.footer {
+    background-color: $lightCyan;
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: $font-xsmall;
+    padding-top: 3.125rem;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2.1875rem
+    }
+
+    &__links {
+        padding-bottom: 4.5rem;
+
+        a {
+            transition: color 150ms ease-in-out;
+            color: $darkModerateCyan;
+
+            &:not(:last-child) {
+                margin-right: 2.875rem;
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__contact {
+        
+        a {
+            &:not(:last-child) {
+                margin-right: 2.3125rem;
+            }
+
+            svg path {
+                transition: fill 150ms ease-in-out;
+            }
+
+            &:hover svg path {
+                fill: $white;
+            }
+        }
+        
+    }
+
+    
+}

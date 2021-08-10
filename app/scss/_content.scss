@@ -1,0 +1,358 @@
+.content {
+    text-align: center;
+    
+    &__grid {
+
+        @media (min-width: 41.6875rem) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "firstContent egg"
+            "cup secondContent"
+            "cherries oranges";
+        }
+
+        @include breakpoint-up(large) {
+            text-align: left;
+        }
+        
+    }
+
+    &__egg {
+        position: relative;
+        background-image: url('../images/mobile/image-transform.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 21.5625rem;
+        
+        @media (min-width: 41.6875em) {
+            background-size: 112%;
+            min-height: 18.563rem;
+            background-position: 50%;
+        }
+
+        @include breakpoint-up(medium) {
+            background-image: url('../images/desktop/image-transform.jpg');
+            min-height: 20rem;
+            grid-area: egg;
+        }
+
+        @include breakpoint-up(large) {
+            min-height: 26.625rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 32.875rem;
+        }
+    }
+
+    &__firstContent {
+        grid-area: firstContent;
+        
+        @include breakpoint-up(xlarge) {
+            padding-top: 8.75rem;
+        }
+
+        .topic {
+            font-size: $font-medium;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large) {
+                padding: 0;
+            }
+        }
+
+        p {
+            font-size: $font-small;
+            color: $darkGrayishBlue;
+            font-family: 'Barlow', sans-serif;
+
+            @include breakpoint-up(large) {
+                line-height: 2;
+            }
+        }
+    
+       a {
+            //anchor link by default (if not wrap in div) not accepting margin prop, so need to put display:block to make sure margin works
+            position: relative;
+            display: block;
+            margin-bottom: 3.125rem;
+            color: black;
+            font-size: $font-xsmall;
+            text-transform: uppercase;
+            mix-blend-mode: multiply;
+    
+            &:after {
+                content: '';
+                position: absolute;
+                width: 27%;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 3px;
+                height: 0.25rem;
+                background-color: rgb(249, 255, 159);
+                border-radius: 10px;
+                mix-blend-mode: soft-light;
+                
+                @include breakpoint-up(large) {
+                    width: 25%;
+                    left: 11%;
+                }
+            }
+
+            &.yellow:hover:after {
+                background-color: $yellow;
+                opacity: 1;
+            }
+
+        } 
+            
+    }
+
+    &__cup {
+        position: relative;
+        background-image: url('../images/mobile/image-stand-out.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 21.5625rem;
+
+        @media (min-width: 41.6875em) {
+            background-size: 112%;
+            min-height: 18.563rem;
+            background-position: 50%;
+        }
+        
+        @include breakpoint-up(medium) {
+            background-image: url('../images/desktop/image-stand-out.jpg');
+            min-height: 20rem;
+            grid-area: cup;
+        }
+
+        @include breakpoint-up(large) {
+            min-height: 26.625rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 32.875rem;
+        }
+    }
+
+    &__secondContent {
+        grid-area: secondContent;
+
+        @include breakpoint-up(xlarge) {
+            padding-top: 8.75rem;
+        }
+        
+        .topic {
+            font-size: $font-medium;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            margin-bottom: 1.875rem;
+            
+            @include breakpoint-up(large) {
+                padding: 0;
+            }
+        }
+
+        p {
+            font-size: $font-small;
+            color: $darkGrayishBlue;
+            font-family: 'Barlow', sans-serif; 
+
+            @include breakpoint-up(large) {
+                line-height: 2;
+            }
+        }
+
+        a.yellow:after {
+            background-color: rgb(249, 255, 159);
+        }
+
+        a.pink:after {
+            background-color: hsl(7, 100%, 85%);
+        }
+    
+       a {
+            //anchor link by default (if not wrap in div) not accepting margin prop, so need to put display:block to make sure margin works
+            position: relative;
+            display: block;
+            margin-bottom: 3.125rem;
+            color: black;
+            font-size: $font-xsmall;
+            text-transform: uppercase;
+            mix-blend-mode: multiply;
+    
+            &:after {
+                content: '';
+                position: absolute;
+                width: 27%;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 3px;
+                height: 0.25rem;
+                background-color: hsl(7, 100%, 85%);
+                border-radius: 10px;
+                mix-blend-mode: soft-light;
+                
+                @include breakpoint-up(large) {
+                    width: 25%;
+                    left: 11%;
+                }
+            }
+
+            &.pink:hover:after {
+                background-color: $softRed;
+                opacity: 1;
+            }
+
+        } 
+    }
+
+    &__thirdContent {
+        margin-top: -18rem;
+        content: "";
+        position: absolute;
+        grid-area: cherries;
+
+        @media (min-width: 41.6875em) {
+            position: relative;
+            margin-top: -10rem;
+        }
+
+        @include breakpoint-up(medium) {
+            position: relative;
+            margin-top: -10rem;
+            padding-top: 0.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: center;
+            margin-top: -12rem;
+            padding-top: 0;
+
+        }
+
+        .topic {
+            font-size: $font-medium;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            color: $darkDesaturatedCyan;
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large) {
+                margin-bottom: 0;
+                
+            }
+        }
+
+        p {
+            font-size: $font-small;
+            color: $darkDesaturatedCyan;
+            font-family: 'Barlow', sans-serif; 
+
+            @include breakpoint-up(large) {
+                line-height: 2;
+            }
+        }
+    }
+
+   
+
+    &__cherry {
+        position: relative;
+        background-image: url('../images/mobile/image-graphic-design.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 41.5rem;
+
+        @media (min-width: 41.6875em) {
+            min-height: 33.5rem;
+        }
+
+        @include breakpoint-up(medium) {
+            background-image: url('../images/desktop/image-graphic-design.jpg');
+            min-height: 20rem;
+            grid-area: cherries;
+        }
+
+        @include breakpoint-up(large) {
+            min-height: 26.625rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 32.875rem;
+        }
+    }
+    
+
+    &__fourthContent {
+        margin-top: -10rem;
+        content: "";
+        position: absolute;
+        color: $darkDesaturatedCyan;
+        grid-area: oranges;
+
+        @include breakpoint-up(medium) {
+            padding-top: 0.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: center;
+            margin-top: -12rem;
+            padding-top: 0;
+        }
+        
+        .topic {
+            font-size: $font-medium;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            color: $darkBlue;
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large) {
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            font-size: $font-small;
+            color: $darkBlue;
+            font-family: 'Barlow', sans-serif; 
+
+            @include breakpoint-up(large) {
+                line-height: 2;
+            }
+        }
+    }
+
+    &__orange {
+        position: relative;
+        background-image: url('../images/mobile/image-photography.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 33.5rem;
+        margin-top: -5.5rem;
+        
+        @media (min-width: 41.6875em) {
+            margin-top: 0;
+        }
+
+        @include breakpoint-up(medium) {
+            background-image: url('../images/desktop/image-photography.jpg');
+            min-height: 20rem;
+            margin-top: 0;
+            grid-area: oranges;
+        }
+
+        @include breakpoint-up(large) {
+            min-height: 26.625rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 32.875rem;
+        }
+    }
+}

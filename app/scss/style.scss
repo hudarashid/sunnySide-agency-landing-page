@@ -1,0 +1,10 @@
+@import "mixins"; //mixins 1st so css can detect?
+@import "variables";
+@import "animations";
+
+@import "globals";
+@import "header";
+@import "hero";
+@import "content";
+@import "testimonial";
+@import "footer";

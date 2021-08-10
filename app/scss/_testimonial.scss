@@ -1,0 +1,184 @@
+.testimonial {
+    text-align: center;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 75% auto;
+        grid-template-areas: 
+            "emily thomas jennie"
+            "emilyDescription thomasDecsription jennieDescription";
+    }
+    .container {
+
+        @include breakpoint-down(medium) { //vertical mobile display
+            display: block;
+            
+        }
+    }
+    
+    .emily {
+        grid-area: emily;
+    }
+
+    .emilyDescription {
+        grid-area: emilyDescription;
+    }
+
+    .thomas {
+        grid-area: thomas;
+    }
+
+    .thomasDecsription {
+        grid-area: thomasDecsription;
+    }
+
+    .jennie {
+        grid-area: jennie;
+    }
+
+    .jennieDescription {
+        grid-area: jennieDescription;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $darkGrayishBlue;
+        font-size: $font-small;
+        letter-spacing: 5px;
+        
+        @include breakpoint-down(medium) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+    
+
+    img {
+        border-radius: 50%;
+        width: 4rem;
+    }
+ 
+    &__text {
+        color: $veryDarkGrayishBlue;
+        font-size: $font-small;
+        font-family: 'Barlow';
+        line-height: 1.8;
+        padding: 1.875rem;
+        
+    }
+
+    &__name {
+        padding-bottom: 0.75rem;
+    }
+
+    &__position {
+        color: $darkGrayishBlue;
+        font-size: $font-xsmall;
+        font-family: 'Barlow';
+        padding-bottom: 3.125rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 10rem;
+        }
+        
+    }
+
+    &__images {
+        background: $lightCyan;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "milk egg"
+        "cone sugarcube";
+
+        @media (min-width: 41.6875em) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "milk egg cone sugarcube";
+        }
+    }
+
+    &__milk {
+        background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 11.25rem;
+        grid-area: milk;
+
+        @media (min-width: 25.875em) {
+            min-height: 12.9rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+            min-height: 20rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 24.625rem;
+        }
+    }
+
+    &__egg {
+        background-image: url('../images/mobile/image-gallery-orange.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 11.25rem;
+        grid-area: egg;
+
+        @media (min-width: 25.875em) {
+            min-height: 12.9rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url('../images/desktop/image-gallery-orange.jpg');
+            min-height: 20rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 24.625rem;
+        }
+    }
+
+    &__cone {
+        background-image: url('../images/mobile/image-gallery-cone.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 11.25rem;
+        grid-area: cone;
+
+        @media (min-width: 25.875em) {
+            min-height: 12.9rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url('../images/desktop/image-gallery-cone.jpg');
+            min-height: 20rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 24.625rem;
+        }
+    }
+
+    &__sugarcube {
+        background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 11.25rem;
+        grid-area: sugarcube;
+
+        @media (min-width: 25.875em) {
+            min-height: 12.9rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+            min-height: 20rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            min-height: 24.625rem;
+        }
+    }
+}

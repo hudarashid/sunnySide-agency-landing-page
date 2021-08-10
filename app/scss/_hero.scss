@@ -1,0 +1,103 @@
+.hero {
+    
+
+    .container {
+        margin-top: -5.3125rem;
+        
+        @include breakpoint-up(large) {
+            margin-top: -10.312rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            margin-top: -13.875rem;
+        }
+    }
+
+    &__img {
+        position: relative;
+        background-image: url('../images/mobile/image-header.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 32.25rem;
+    
+
+        @media (min-width: 41.6875em) {
+            background-image: url('../images/desktop/image-header.jpg');
+            min-height: 23.125rem;
+            margin-top: 2.5rem;
+            
+            @include breakpoint-up(medium) {
+                min-height: 26.5rem;
+                margin-top: 2.5rem;
+            }
+
+            @include breakpoint-up(large) {
+                min-height: 35.5rem;
+                margin-top: 0;
+            }
+
+            @include breakpoint-up(xlarge) {
+                min-height: 43.75rem;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../images/icon-arrow-down.svg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-position: 50% 58%;
+            margin-top: 25px;
+
+            @media (min-width: 41.6875em) {
+                margin-top: -0.75rem;
+            }
+
+            @include breakpoint-up(medium) {
+                margin-top:-1rem;
+            }
+
+            @include breakpoint-up(large) {
+                margin-top: -1.875rem;
+            }
+
+            @include breakpoint-up(xlarge) {
+                margin-top: -0.875rem;
+            }
+        }
+    }
+
+    &__text {
+
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -24.25rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $font-medium;
+        letter-spacing: 7px;
+        color: $white;
+
+        @media (min-width: 41.6875em) {
+            margin-top: -20.25rem;
+        }
+
+        @include breakpoint-up(medium) {
+            margin-top: -22.25rem;
+        }
+
+        @include breakpoint-up(large) {
+            margin-top: -25.25rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            margin-top: -30.25rem;
+        }
+        
+    }
+    
+}

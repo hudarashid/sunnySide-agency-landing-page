@@ -1,0 +1,23 @@
+//Breakpoints - general
+@media (min-width: 64em) { 
+    //style go here
+}
+
+//breakpoints-up means: target this viewport and UP 
+//from 768px, 1024px to 1240px
+$breakpoints-up: ("medium": "48em", "large": "64em", "xlarge": "77.5em");
+
+//from 767px, 1023px to 1239px
+$breakpoints-down: ("small":"47.9375em","medium": "63.9375em", "large": "77.4375em");
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+      @content;  
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+      @content;  
+    }
+}

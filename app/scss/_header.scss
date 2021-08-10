@@ -1,0 +1,123 @@
+.header {
+    background: $skyBlue;
+    position: relative;
+    z-index: 1;
+
+    //hamburger open default styling
+    &.open {
+        
+        .overlay {
+            display: block;
+        }
+
+        .header__toggle {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    //default overlay
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient($skyBlue, transparent);
+    }
+
+    nav {
+        position: relative;
+        
+        @include breakpoint-down(medium) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__logo {
+        background-image: inherit;
+    }
+
+    &__toggle {
+        
+        > span { //">" use for child element
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $white;
+            transition: all 300ms ease-in-out;
+            transform-origin: 2px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+ 
+    &__links {
+
+        a {
+            font-size: $font-small;
+            font-family: sans-serif;
+            color: $white;
+            margin-right: 45px;
+        }
+        
+    }
+
+    &__mobileMenu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2.5rem 6rem 2.5rem 6rem;
+        margin-top: 3.125rem;
+        background: $white;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 45px solid $white;
+            border-left: 50px solid transparent;
+            bottom: 100%;
+            left: 100%;
+            transform: translateX(-100%);
+            
+        }
+
+        a {
+            display: block;
+            color: $darkGrayishBlue;
+            font-family: sans-serif;
+            font-size: $font-small;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            &.button {
+                color: black;
+                font-family: 'Fraunces', serif;
+
+                @include breakpoint-up(medium) {
+                    margin-left: 9.4rem;
+                    margin-right: 9.4rem;
+                }
+            }
+        }
+    }
+   
+}

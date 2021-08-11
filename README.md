@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Final](./images/Final Screemshot.png)
+![Final](https://github.com/hudarashid/sunnySide-agency-landing-page/blob/master/images/Final%20Screenshot.png)
 
 
 ### Links

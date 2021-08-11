@@ -1121,7 +1121,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .testimonial__sugarcube {
-    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+    background-image: url("../../images/desktop/image-gallery-sugarcubes.jpg");
     min-height: 20rem;
   }
 }

@@ -173,7 +173,7 @@
         }
 
         @include breakpoint-up(large) {
-            background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
+            background-image: url('../../images/desktop/image-gallery-sugarcubes.jpg');
             min-height: 20rem;
         }
 

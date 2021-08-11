@@ -13,6 +13,20 @@
 
     &__links {
         padding-bottom: 4.5rem;
+        justify-content: center;
+
+        ul {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 2.875rem;
+                }
+            }
+        }
 
         a {
             transition: color 150ms ease-in-out;
@@ -29,12 +43,22 @@
     }
 
     &__contact {
+
+        ul {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 2.3125rem;
+                }
+            }
+        }
         
         a {
-            &:not(:last-child) {
-                margin-right: 2.3125rem;
-            }
-
+      
             svg path {
                 transition: fill 150ms ease-in-out;
             }

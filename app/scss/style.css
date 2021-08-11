@@ -184,7 +184,7 @@ a, a:visited, a:hover {
   }
 }
 
-.button {
+button, .button {
   position: relative;
   display: inline-block;
   background-color: white;
@@ -192,6 +192,7 @@ a, a:visited, a:hover {
   border: 0;
   padding: 1.25rem 1.875rem 1.25rem 1.875rem;
   color: black;
+  font-family: 'Fraunces';
   font-size: 0.75rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -201,25 +202,25 @@ a, a:visited, a:hover {
 }
 
 @media (max-width: 63.9375em) {
-  .button {
+  button, .button {
     background-color: #fad400;
     padding: 1.25rem;
   }
 }
 
-.button:after {
+button:after, .button:after {
   content: "";
   position: absolute;
 }
 
-.button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   color: white;
   background-color: rgba(255, 255, 255, 0.25);
   opacity: 1;
 }
 
 @media (max-width: 63.9375em) {
-  .button:hover, .button:focus {
+  button:hover, button:focus, .button:hover, .button:focus {
     background-color: #f9ff9f;
     opacity: 1;
   }
@@ -1152,6 +1153,22 @@ a, a:visited, a:hover {
 
 .footer__links {
   padding-bottom: 4.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__links ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links ul li:not(:last-child) {
+  margin-right: 2.875rem;
 }
 
 .footer__links a {
@@ -1168,7 +1185,16 @@ a, a:visited, a:hover {
   color: white;
 }
 
-.footer__contact a:not(:last-child) {
+.footer__contact ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__contact ul li:not(:last-child) {
   margin-right: 2.3125rem;
 }
 

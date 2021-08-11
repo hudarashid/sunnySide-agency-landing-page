@@ -94,7 +94,7 @@ a, a:visited, a:hover {
     }
 }
 
-.button {
+button, .button {
     position: relative;
     display: inline-block;
     background-color: $white;
@@ -102,6 +102,7 @@ a, a:visited, a:hover {
     border: 0;
     padding: 1.25rem 1.875rem 1.25rem 1.875rem;
     color: black;
+    font-family: 'Fraunces';
     font-size: $font-xsmall;
     text-transform: uppercase;
     cursor: pointer;

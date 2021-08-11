@@ -15,14 +15,14 @@
 
     &__img {
         position: relative;
-        background-image: url('/images/mobile/image-header.jpg');
+        background-image: url('../../images/mobile/image-header.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: 32.25rem;
     
 
         @media (min-width: 41.6875em) {
-            background-image: url('/images/desktop/image-header.jpg');
+            background-image: url('../../images/desktop/image-header.jpg');
             min-height: 23.125rem;
             margin-top: 2.5rem;
             
@@ -44,7 +44,7 @@
         &::before {
             content: '';
             position: absolute;
-            background: url('/images/icon-arrow-down.svg');
+            background: url('../../images/icon-arrow-down.svg');
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;

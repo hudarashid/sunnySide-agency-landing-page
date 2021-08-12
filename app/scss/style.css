@@ -302,6 +302,15 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin-bottom: 6px;
 }
 
+.header__links ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .header__links a {
   font-size: 0.875rem;
   font-family: sans-serif;
@@ -473,12 +482,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 @media (min-width: 64em) {
   .hero__text {
     margin-top: -25.25rem;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 77.5em) {
   .hero__text {
-    margin-top: -30.25rem;
+    margin-top: -30rem;
   }
 }
 

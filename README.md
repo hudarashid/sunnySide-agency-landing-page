@@ -65,7 +65,7 @@ Continue learn JS / React
 
 ## Author
 
-- Frontend Mentor - [@kopisatu](https://www.frontendmentor.io/profile/kopisatu)
+- Frontend Mentor - [@hudarashid](https://www.frontendmentor.io/profile/hudarashid)
 - Twitter - [@hudaMRashid](https://twitter.com/hudaMRashid)
 - LinkedIn - [📚 Huda Rashid](https://www.linkedin.com/in/%F0%9F%93%9A-huda-rashid-0843aa146/)
 
